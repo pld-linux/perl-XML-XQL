@@ -18,7 +18,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(XML::DOM) >= 1.29
+BuildRequires:	perl-XML-DOM >= 1.29
 BuildRequires:	perl-Date-Manip >= 5.33
 BuildRequires:	perl-Parse-Yapp
 BuildRequires:	perl-XML-Parser >= 2.30
