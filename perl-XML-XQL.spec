@@ -2,9 +2,9 @@
 Summary:	XML-XQL perl module
 Summary(pl):	Modu³ perla XML-XQL
 Name:		perl-XML-XQL
-Version:	0.60
-Release:	3
-Copyright:	GPL
+Version:	0.61
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-XQL-%{version}.tar.gz
