@@ -30,7 +30,7 @@ XML-XQL - modu³ pozwalaj±cy na zapytania XQL na drzewach obiektów XML.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
