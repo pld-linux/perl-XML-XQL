@@ -16,7 +16,7 @@ BuildRequires:	perl-Date-Manip
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Provides:	perl(XML::XQL::Plus)
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 XML-XQL - module that allows you to perform XQL queries on XML object trees. 
