@@ -3,13 +3,14 @@ Summary:	XML-XQL perl module
 Summary(pl):	Modu³ perla XML-XQL
 Name:		perl-XML-XQL
 Version:	0.61
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-XQL-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	perl-XML-DOM
 BuildRequires:	perl-Parse-Yapp
 BuildRequires:	perl-Date-Manip
@@ -34,27 +35,18 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/XML/XQL
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        Changes README
+gzip -9nf Changes README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {Changes,README}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/xql.pl
-
 %{perl_sitelib}/XML/XQL.pm
 %{perl_sitelib}/XML/XQL
-%{perl_sitearch}/auto/XML/XQL
-
 %{_mandir}/man3/*
