@@ -6,7 +6,7 @@
 %define	pdir	XML
 %define	pnam	XQL
 Summary:	XML::XQL - query XML tree structures with XQL
-Summary(pl):	XML::XQL - odpytywanie struktur drzewiastych XML przy u¿yciu XQL
+Summary(pl):	XML::XQL - odpytywanie struktur drzewiastych XML-a przy u¿yciu XQL-a
 Name:		perl-XML-XQL
 Version:	0.68
 Release:	1
