@@ -14,8 +14,6 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-XML-DOM
 BuildRequires:	perl-Parse-Yapp
 BuildRequires:	perl-Date-Manip
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 Provides:	perl(XML::XQL::Plus)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
