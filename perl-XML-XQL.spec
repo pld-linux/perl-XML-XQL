@@ -3,8 +3,8 @@
 %bcond_without tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	XQL
+%define		pdir	XML
+%define		pnam	XQL
 Summary:	XML::XQL - query XML tree structures with XQL
 Summary(pl):	XML::XQL - odpytywanie struktur drzewiastych XML-a przy u¿yciu XQL-a
 Name:		perl-XML-XQL
