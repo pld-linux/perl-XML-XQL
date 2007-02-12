@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	XQL
 Summary:	XML::XQL - query XML tree structures with XQL
-Summary(pl):	XML::XQL - odpytywanie struktur drzewiastych XML-a przy u¿yciu XQL-a
+Summary(pl.UTF-8):   XML::XQL - odpytywanie struktur drzewiastych XML-a przy uÅ¼yciu XQL-a
 Name:		perl-XML-XQL
 Version:	0.68
 Release:	2
@@ -32,10 +32,10 @@ This is a Perl extension that allows you to perform XQL queries on XML
 object trees. Currently only the XML::DOM module is supported, but
 other implementations, like XML::Grove, may soon follow.
 
-%description -l pl
-Jest to rozszerzenie Perla pozwalaj±ce na wykonywanie zapytañ XQL na
-drzewach obiektów XML. Aktualnie obs³ugiwany jest tylko modu³
-XML::DOM, ale mo¿e wkrótce bêd± inne implementacje, takie jak
+%description -l pl.UTF-8
+Jest to rozszerzenie Perla pozwalajÄ…ce na wykonywanie zapytaÅ„ XQL na
+drzewach obiektÃ³w XML. Aktualnie obsÅ‚ugiwany jest tylko moduÅ‚
+XML::DOM, ale moÅ¼e wkrÃ³tce bÄ™dÄ… inne implementacje, takie jak
 XML::Grove.
 
 %prep
