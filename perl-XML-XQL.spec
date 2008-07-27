@@ -9,7 +9,7 @@ Summary:	XML::XQL - query XML tree structures with XQL
 Summary(pl.UTF-8):	XML::XQL - odpytywanie struktur drzewiastych XML-a przy użyciu XQL-a
 Name:		perl-XML-XQL
 Version:	0.68
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
