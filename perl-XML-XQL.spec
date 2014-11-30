@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	XML
 %define		pnam	XQL
+%include	/usr/lib/rpm/macros.perl
 Summary:	XML::XQL - query XML tree structures with XQL
 Summary(pl.UTF-8):	XML::XQL - odpytywanie struktur drzewiastych XML-a przy użyciu XQL-a
 Name:		perl-XML-XQL
@@ -15,12 +15,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bb84096fdf8bcc96a35971539ce8c19e
+URL:		http://search.cpan.org/dist/XML-XQL/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-XML-DOM >= 1.29
 BuildRequires:	perl-Date-Manip >= 5.33
 BuildRequires:	perl-Parse-Yapp
+BuildRequires:	perl-XML-DOM >= 1.29
 BuildRequires:	perl-XML-Parser >= 2.30
 %endif
 Obsoletes:	perl-libxml-enno
