@@ -4,7 +4,6 @@
 
 %define		pdir	XML
 %define		pnam	XQL
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::XQL - query XML tree structures with XQL
 Summary(pl.UTF-8):	XML::XQL - odpytywanie struktur drzewiastych XML-a przy użyciu XQL-a
 Name:		perl-XML-XQL
